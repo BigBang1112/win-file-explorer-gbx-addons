@@ -3,11 +3,9 @@ using GBX.NET.Engines.Game;
 using GBX.NET.Engines.GameData;
 using GBX.NET.Imaging;
 using Microsoft.Win32;
-using SixLabors.ImageSharp.Processing;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
-using static GBX.NET.Engines.Plug.CPlugSolid2Model;
 
 namespace WinFileExplorerGbxPreview.Thumbnail;
 
