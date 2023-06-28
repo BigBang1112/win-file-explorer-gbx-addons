@@ -107,28 +107,23 @@ public class GbxThumbnailProvider : IThumbnailProvider, IInitializeWithStream
             return bitmap;
         }
 
-        SixLabors.ImageSharp.Image image;
+        using var webpStream = new MemoryStream(collector.IconWebP);
+        using var image = SixLabors.ImageSharp.Image.Load(webpStream);
 
-        using (var webpStream = new MemoryStream(collector.IconWebP))
+        var width = image.Width;
+        var height = image.Height;
+
+        Resize(ref width, ref height, size);
+
+        image.Mutate(x =>
         {
-            image = SixLabors.ImageSharp.Image.Load(webpStream);
-
-            var width = image.Width;
-            var height = image.Height;
-
-            Resize(ref width, ref height, size);
-
-            image.Mutate(x =>
-            {
-                x.Resize(width, height);
-                x.RotateFlip(RotateMode.Rotate180, FlipMode.Horizontal);
-            });
-        }
+            x.Resize(width, height);
+            x.RotateFlip(RotateMode.Rotate180, FlipMode.Horizontal);
+        });
 
         using var bmpStream = new MemoryStream();
 
         image.SaveAsPng(bmpStream);
-        image.Dispose();
 
         bmpStream.Position = 0;
 
