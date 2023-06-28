@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{3A83FD9C-34F8-43FD-8FD3-8AF2E536B48A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFileExplorerGbxPreview.Thumbnail", "Src\WinFileExplorerGbxPreview.Thumbnail\WinFileExplorerGbxPreview.Thumbnail.csproj", "{9F827B78-A8A0-4977-8B23-7CB31240C264}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFileExplorerGbxPreview.IconOverlay", "Src\WinFileExplorerGbxPreview.IconOverlay\WinFileExplorerGbxPreview.IconOverlay.csproj", "{52AD36BA-3F3D-467B-843B-EA2326D3F893}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{67C09BCE-2039-44B1-9BFD-E33F88315C07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFileExplorerGbxPreview.Thumbnail.Tests", "Tests\WinFileExplorerGbxPreview.Thumbnail.Tests\WinFileExplorerGbxPreview.Thumbnail.Tests.csproj", "{805E7D17-5C79-40DD-BC71-5E23F7DE0C4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F827B78-A8A0-4977-8B23-7CB31240C264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F827B78-A8A0-4977-8B23-7CB31240C264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F827B78-A8A0-4977-8B23-7CB31240C264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F827B78-A8A0-4977-8B23-7CB31240C264}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52AD36BA-3F3D-467B-843B-EA2326D3F893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52AD36BA-3F3D-467B-843B-EA2326D3F893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52AD36BA-3F3D-467B-843B-EA2326D3F893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52AD36BA-3F3D-467B-843B-EA2326D3F893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{805E7D17-5C79-40DD-BC71-5E23F7DE0C4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{805E7D17-5C79-40DD-BC71-5E23F7DE0C4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{805E7D17-5C79-40DD-BC71-5E23F7DE0C4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{805E7D17-5C79-40DD-BC71-5E23F7DE0C4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F827B78-A8A0-4977-8B23-7CB31240C264} = {3A83FD9C-34F8-43FD-8FD3-8AF2E536B48A}
+		{52AD36BA-3F3D-467B-843B-EA2326D3F893} = {3A83FD9C-34F8-43FD-8FD3-8AF2E536B48A}
+		{805E7D17-5C79-40DD-BC71-5E23F7DE0C4C} = {67C09BCE-2039-44B1-9BFD-E33F88315C07}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BBAFCD2B-7E04-48A0-A832-4989FCB5BEEF}
+	EndGlobalSection
+EndGlobal
