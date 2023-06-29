@@ -18,9 +18,9 @@ jobs:
     - name: Install dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build -c Release -a x64 --no-restore
+      run: dotnet build Src/WinFileExplorerGbxPreview.Thumbnail -r win-x64 -c Release --no-restore
     - name: Test
-      run: dotnet test --no-restore --verbosity normal
+      run: dotnet test Tests/WinFileExplorerGbxPreview.Thumbnail.Tests --no-restore --verbosity normal
     - name: Install Wix
       run: dotnet tool install --global wix
     - name: Build Setup
