@@ -15,14 +15,14 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 7.0.x
-    - name: Install Wix
-      run: dotnet tool install --global wix
     - name: Install dependencies
       run: dotnet restore
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
+    - name: Install Wix
+      run: dotnet tool install --global wix
     - name: Build Setup
       run: |
-        wix build Installers\WinFileExplorerGbxPreview.Thumbnail\Package.wxs
+        wix build Installers\WinFileExplorerGbxPreview.Thumbnail\WinFileExplorerGbxPreview.Thumbnail.wixproj
