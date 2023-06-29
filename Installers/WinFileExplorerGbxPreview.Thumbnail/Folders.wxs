@@ -1,15 +1,7 @@
 <Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
 	<Fragment>
 		<StandardDirectory Id="ProgramFiles6432Folder">
-			<Directory Id="INSTALLFOLDER" Name="BigBang1112\WinFileExplorerGbxPreview\Thumbnail">
-				<Directory Name="runtimes">
-					<Directory Name="win">
-						<Directory Name="lib">
-							<Directory Id="RUNTIMES" Name="net7.0" />
-						</Directory>
-					</Directory>
-				</Directory>
-			</Directory>
+			<Directory Id="INSTALLFOLDER" Name="BigBang1112\WinFileExplorerGbxPreview\Thumbnail" />
 		</StandardDirectory>
 	</Fragment>
 </Wix>
