@@ -27,8 +27,10 @@ Shows a small Gbx icon on top of the file thumbnail, making it easier to disting
 
 ### Recommended (via WinGet)
 
-1. Install [WinGet](https://www.microsoft.com/p/app-installer/9nblggh4nns1) via Microsoft Store
-2. In your Start Menu, type `cmd`
+> !!! All WinGet packages coming from the BigBang1112 GitHub account will be available **ONLY on https://winget.bigbang1112.cz** !!!
+
+1. Install [WinGet](https://www.microsoft.com/p/app-installer/9nblggh4nns1) via Microsoft Store.
+2. In your Start Menu, type `cmd`, press Enter.
 3. Type these commands below (individually):
 
 ```
@@ -39,8 +41,6 @@ winget install WinFileExplorerGbxPreview.IconOverlay
 ```
 
 Each `WinFileExplorerGbxPreview` package is independent, you can only install those that you want.
-
-All WinGet packages coming from the BigBang1112 GitHub account will be available **ONLY on https://winget.bigbang1112.cz**, no other repository belongs to me!!!
 
 ### Alternative (manually via .msi file download)
 
