@@ -24,4 +24,5 @@ jobs:
     - name: Build Setup
       run: |
         cd Installers\WinFileExplorerGbxPreview.Thumbnail
+        dotnet tool install --global wix
         wix build
