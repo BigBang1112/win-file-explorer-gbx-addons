@@ -25,4 +25,4 @@ jobs:
       run: dotnet tool install --global wix
     - name: Build Setup
       run: |
-        wix build Installers\WinFileExplorerGbxPreview.Thumbnail\WinFileExplorerGbxPreview.Thumbnail.wixproj
+        dotnet build --configuration Release Installers\WinFileExplorerGbxPreview.Thumbnail\WinFileExplorerGbxPreview.Thumbnail.wixproj
