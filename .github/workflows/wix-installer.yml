@@ -1,0 +1,33 @@
+name: .NET Core Build
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install Wix
+      uses: actions/checkout@v2
+      with:
+        repository: fbarresi/wix
+        path: wix
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 7.0.x
+    - name: Install dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+    - name: Test
+      run: dotnet test --no-restore --verbosity normal
+    - name: Build Setup
+      run: |
+        cd Installers\WinFileExplorerGbxPreview.Thumbnail
+        wix\tools\candle.exe Package.wxs -o obj\
+        wix\tools\light.exe obj\*.wixobj -o bin\Installer.msi
