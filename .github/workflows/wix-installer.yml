@@ -18,14 +18,14 @@ jobs:
     - name: Install dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build -c Release -r win-x64 --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
     - name: Install Wix
       run: dotnet tool install --global wix
     - name: Build Setup
-      run: dotnet build -c Release -o setup Installers\WinFileExplorerGbxPreview.Thumbnail\WinFileExplorerGbxPreview.Thumbnail.wixproj
+      run: dotnet build -c Release /p:Platform=x64 -o setup Installers\WinFileExplorerGbxPreview.Thumbnail
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.2
       with:
-        path: setup
+        path: setup/en-US
