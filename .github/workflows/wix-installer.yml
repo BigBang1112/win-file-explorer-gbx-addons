@@ -24,5 +24,8 @@ jobs:
     - name: Install Wix
       run: dotnet tool install --global wix
     - name: Build Setup
-      run: |
-        dotnet build --configuration Release Installers\WinFileExplorerGbxPreview.Thumbnail\WinFileExplorerGbxPreview.Thumbnail.wixproj
+      run: dotnet build -c Release -o setup Installers\WinFileExplorerGbxPreview.Thumbnail\WinFileExplorerGbxPreview.Thumbnail.wixproj
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v3.1.2
+      with:
+        path: setup
