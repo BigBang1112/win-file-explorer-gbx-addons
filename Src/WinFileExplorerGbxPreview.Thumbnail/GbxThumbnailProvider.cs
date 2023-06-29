@@ -42,7 +42,7 @@ public class GbxThumbnailProvider : IThumbnailProvider, IInitializeWithStream
 
         using var streamWrap = new ComStreamWrapper(stream);
 
-        var bmp = GetThumbnailBitmap(streamWrap, size: cx);
+        var bmp = GetBitmap(streamWrap, size: cx);
 
         if (bmp is null)
         {
@@ -53,7 +53,7 @@ public class GbxThumbnailProvider : IThumbnailProvider, IInitializeWithStream
         phbmp = bmp.GetHbitmap();
     }
 
-    internal static Bitmap? GetThumbnailBitmap(Stream stream, int size)
+    internal static Bitmap? GetBitmap(Stream stream, int size)
     {
         try
         {
@@ -64,7 +64,7 @@ public class GbxThumbnailProvider : IThumbnailProvider, IInitializeWithStream
                 return null;
             }
 
-            return GetThumbnailBitmap(node, size);
+            return GetBitmap(node, size);
         }
         catch
         {
@@ -72,7 +72,7 @@ public class GbxThumbnailProvider : IThumbnailProvider, IInitializeWithStream
         }
     }
 
-    internal static Bitmap? GetThumbnailBitmap(Node node, int size) => node switch
+    internal static Bitmap? GetBitmap(Node node, int size) => node switch
     {
         CGameCtnChallenge map => GetThumbnailBitmap(map, size),
         CGameCtnCollector collector => GetIconBitmap(collector, size),
@@ -130,6 +130,11 @@ public class GbxThumbnailProvider : IThumbnailProvider, IInitializeWithStream
 
     internal static void Resize(ref int width, ref int height, int size)
     {
+        if (size > width && size > height)
+        {
+            return;
+        }
+
         if (width > height)
         {
             var ratio = (double)width / height;
