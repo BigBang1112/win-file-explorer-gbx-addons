@@ -2,6 +2,8 @@
 
 <p align="center">Happy to present a couple of addons to make Gbx file scrolling just a little more comfortable on Windows.</p>
 
+<p align="center">Due to usage of COM, these addons are supported widely across alternative file browsers on Windows.</p>
+
 ## Thumbnail / Icon
 
 **Package name: `WinFileExplorerGbxPreview.Thumbnail`**
