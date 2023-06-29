@@ -42,6 +42,8 @@ winget install WinFileExplorerGbxPreview.IconOverlay
 
 Each `WinFileExplorerGbxPreview` package is independent, you can only install those that you want.
 
+> Many of my other projects will be coming to WinGet soon too!
+
 ### Alternative (manually via .msi file download)
 
 TODO
