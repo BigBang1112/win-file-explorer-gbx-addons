@@ -1,9 +1,0 @@
-﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
-  <Package Name="WinFileExplorerGbxPreview" Manufacturer="TODO Manufacturer" Version="1.0.0.0" UpgradeCode="532256cb-9f1f-4afb-8da4-32dcfef6f4ad">
-    <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
-
-    <Feature Id="Main">
-      <ComponentGroupRef Id="ExampleComponents" />
-    </Feature>
-  </Package>
-</Wix>

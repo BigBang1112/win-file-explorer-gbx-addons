@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Fragment>
+		<ComponentGroup Id="Main" Directory="INSTALLFOLDER">
+			<Component>
+				<File Source="WinFileExplorerGbxPreview.Thumbnail.dll" />
+			</Component>
+			<Component>
+				<File Source="WinFileExplorerGbxPreview.Thumbnail.comhost.dll" />
+			</Component>
+			<Component>
+				<File Source="WinFileExplorerGbxPreview.Thumbnail.deps.json" />
+			</Component>
+			<Component>
+				<File Source="WinFileExplorerGbxPreview.Thumbnail.pdb" />
+			</Component>
+			<Component>
+				<File Source="WinFileExplorerGbxPreview.Thumbnail.runtimeconfig.json" />
+			</Component>
+			<Component>
+				<File Source="TmEssentials.dll" />
+			</Component>
+			<Component>
+				<File Source="System.Drawing.Common.dll" />
+			</Component>
+			<Component>
+				<File Source="SixLabors.ImageSharp.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Win32.SystemEvents.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.Logging.Abstractions.dll" />
+			</Component>
+			<Component>
+				<File Source="GBX.NET.Imaging.dll" />
+			</Component>
+			<Component>
+				<File Source="GBX.NET.dll" />
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>

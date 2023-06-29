@@ -1,0 +1,19 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Package Name="WinFileExplorerGbxPreview.Thumbnail" Manufacturer="BigBang1112" Version="1.0.0.0" UpgradeCode="91285ed0-31d5-46b0-b668-9a948669c8ae">
+		<MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
+		<MediaTemplate EmbedCab="yes" />
+
+		<CustomAction Id="Register" Directory="INSTALLFOLDER" Execute="deferred" Impersonate="no" ExeCommand='regsvr32.exe "[INSTALLDIR]WinFileExplorerGbxPreview.Thumbnail.comhost.dll"' />
+		<CustomAction Id="Unregister" Directory="INSTALLFOLDER" Execute="deferred" Impersonate="no" ExeCommand='regsvr32.exe /u "[INSTALLDIR]WinFileExplorerGbxPreview.Thumbnail.comhost.dll"' />
+
+		<Feature Id="Main">
+			<ComponentGroupRef Id="Runtimes" />
+			<ComponentGroupRef Id="Main" />
+		</Feature>
+
+		<InstallExecuteSequence>
+			<Custom Action="Register" Before="InstallFinalize" Condition="NOT Installed"></Custom>
+			<Custom Action="Unregister" After="InstallInitialize" Condition="REMOVE=&quot;ALL&quot;"></Custom>
+		</InstallExecuteSequence>
+	</Package>
+</Wix>
