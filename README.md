@@ -4,6 +4,8 @@
 
 <p align="center">Due to usage of COM, these addons are supported widely across alternative file browsers on Windows.</p>
 
+[![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/BigBang1112/win-file-explorer-gbx-preview?include_prereleases&style=for-the-badge)](https://github.com/BigBang1112/win-file-explorer-gbx-preview/releases) [![GitHub all releases](https://img.shields.io/github/downloads/BigBang1112/win-file-explorer-gbx-preview/total?style=for-the-badge)](https://github.com/BigBang1112/win-file-explorer-gbx-preview/releases)
+
 ## Thumbnail / Icon
 
 **Package name: `WinFileExplorerGbxPreview.Thumbnail`**
