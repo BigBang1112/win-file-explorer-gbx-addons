@@ -30,6 +30,8 @@
 
 ## Gbx Icon Overlay
 
+![WinFileExplorerGbxAddons.IconOverlay example](Addon_IconOverlay_Example.jpg)
+
 **Package name: `WinFileExplorerGbxAddons.IconOverlay`**
 
 Shows a small Gbx icon on top of the file thumbnail, making it easier to distinguish image file from Gbx file for example.
