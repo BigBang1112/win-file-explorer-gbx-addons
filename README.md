@@ -59,6 +59,6 @@ Each `WinFileExplorerGbxAddons` package is independent, you can only install tho
 ### Alternative (manually via .msi file download)
 
 1. Install [.NET 7 Runtime (desktop apps)](https://dotnet.microsoft.com/en-us/download/dotnet/7.0/runtime)
-2. Download the [latest .MSI release](https://github.com/BigBang1112/win-file-explorer-gbx-addons/releases) according to your OS
+2. Download the [latest .MSI release](https://github.com/BigBang1112/win-file-explorer-gbx-addons/releases) of the addons you want according to your OS
 3. Run the .MSI and proceed.
 4. Done.
