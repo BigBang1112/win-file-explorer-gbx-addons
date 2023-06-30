@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Fragment>
+		<ComponentGroup Id="Main" Directory="INSTALLFOLDER">
+			<Component>
+				<File Source="WinFileExplorerGbxAddons.IconOverlay.dll" />
+			</Component>
+			<Component>
+				<File Source="WinFileExplorerGbxAddons.IconOverlay.comhost.dll" />
+			</Component>
+			<Component>
+				<File Source="WinFileExplorerGbxAddons.IconOverlay.deps.json" />
+			</Component>
+			<Component>
+				<File Source="WinFileExplorerGbxAddons.IconOverlay.pdb" />
+			</Component>
+			<Component>
+				<File Source="WinFileExplorerGbxAddons.IconOverlay.runtimeconfig.json" />
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>

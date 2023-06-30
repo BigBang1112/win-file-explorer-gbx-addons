@@ -1,0 +1,19 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Package Name="Universe Gbx Addons for Windows File Explorer (Icon overlay)" Manufacturer="BigBang1112" Version="1.0.0.0" ProductCode="05e427d4-603c-4f3c-905a-d648df85e2dd" UpgradeCode="4ef3b4a5-f34d-4f96-8b46-ebb357be7c6b">
+		<MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
+		<MediaTemplate EmbedCab="yes" />
+
+		<CustomAction Id="Register" Directory="INSTALLFOLDER" Execute="deferred" Impersonate="no" ExeCommand='regsvr32.exe /s "[INSTALLDIR]WinFileExplorerGbxAddons.IconOverlay.comhost.dll"' />
+		<CustomAction Id="Unregister" Directory="INSTALLFOLDER" Execute="deferred" Impersonate="no" ExeCommand='regsvr32.exe /s /u "[INSTALLDIR]WinFileExplorerGbxAddons.IconOverlay.comhost.dll"' />
+
+		<Feature Id="Main">
+			<ComponentGroupRef Id="Main" />
+			<ComponentGroupRef Id="Data" />
+		</Feature>
+
+		<InstallExecuteSequence>
+			<Custom Action="Register" Before="InstallFinalize" Condition="NOT Installed"></Custom>
+			<Custom Action="Unregister" After="InstallInitialize" Condition="REMOVE=&quot;ALL&quot;"></Custom>
+		</InstallExecuteSequence>
+	</Package>
+</Wix>

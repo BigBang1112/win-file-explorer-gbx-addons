@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Installers", "Installers", 
 EndProject
 Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "WinFileExplorerGbxAddons.Thumbnail", "Installers\WinFileExplorerGbxAddons.Thumbnail\WinFileExplorerGbxAddons.Thumbnail.wixproj", "{F8705939-1CFD-4F71-BCF9-DB1E59675AED}"
 EndProject
+Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "WinFileExplorerGbxAddons.IconOverlay", "Installers\WinFileExplorerGbxAddons.IconOverlay\WinFileExplorerGbxAddons.IconOverlay.wixproj", "{BC479CDE-CCC0-4B98-B007-D6E75185A12B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -98,6 +100,22 @@ Global
 		{F8705939-1CFD-4F71-BCF9-DB1E59675AED}.Release|x64.Build.0 = Release|x64
 		{F8705939-1CFD-4F71-BCF9-DB1E59675AED}.Release|x86.ActiveCfg = Release|x86
 		{F8705939-1CFD-4F71-BCF9-DB1E59675AED}.Release|x86.Build.0 = Release|x86
+		{BC479CDE-CCC0-4B98-B007-D6E75185A12B}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{BC479CDE-CCC0-4B98-B007-D6E75185A12B}.Debug|Any CPU.Build.0 = Debug|x64
+		{BC479CDE-CCC0-4B98-B007-D6E75185A12B}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{BC479CDE-CCC0-4B98-B007-D6E75185A12B}.Debug|ARM64.Build.0 = Debug|ARM64
+		{BC479CDE-CCC0-4B98-B007-D6E75185A12B}.Debug|x64.ActiveCfg = Debug|x64
+		{BC479CDE-CCC0-4B98-B007-D6E75185A12B}.Debug|x64.Build.0 = Debug|x64
+		{BC479CDE-CCC0-4B98-B007-D6E75185A12B}.Debug|x86.ActiveCfg = Debug|x86
+		{BC479CDE-CCC0-4B98-B007-D6E75185A12B}.Debug|x86.Build.0 = Debug|x86
+		{BC479CDE-CCC0-4B98-B007-D6E75185A12B}.Release|Any CPU.ActiveCfg = Release|x64
+		{BC479CDE-CCC0-4B98-B007-D6E75185A12B}.Release|Any CPU.Build.0 = Release|x64
+		{BC479CDE-CCC0-4B98-B007-D6E75185A12B}.Release|ARM64.ActiveCfg = Release|ARM64
+		{BC479CDE-CCC0-4B98-B007-D6E75185A12B}.Release|ARM64.Build.0 = Release|ARM64
+		{BC479CDE-CCC0-4B98-B007-D6E75185A12B}.Release|x64.ActiveCfg = Release|x64
+		{BC479CDE-CCC0-4B98-B007-D6E75185A12B}.Release|x64.Build.0 = Release|x64
+		{BC479CDE-CCC0-4B98-B007-D6E75185A12B}.Release|x86.ActiveCfg = Release|x86
+		{BC479CDE-CCC0-4B98-B007-D6E75185A12B}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -107,6 +125,7 @@ Global
 		{52AD36BA-3F3D-467B-843B-EA2326D3F893} = {3A83FD9C-34F8-43FD-8FD3-8AF2E536B48A}
 		{805E7D17-5C79-40DD-BC71-5E23F7DE0C4C} = {67C09BCE-2039-44B1-9BFD-E33F88315C07}
 		{F8705939-1CFD-4F71-BCF9-DB1E59675AED} = {A199D0F7-7762-4A7E-A7D6-BB652B81C829}
+		{BC479CDE-CCC0-4B98-B007-D6E75185A12B} = {A199D0F7-7762-4A7E-A7D6-BB652B81C829}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BBAFCD2B-7E04-48A0-A832-4989FCB5BEEF}

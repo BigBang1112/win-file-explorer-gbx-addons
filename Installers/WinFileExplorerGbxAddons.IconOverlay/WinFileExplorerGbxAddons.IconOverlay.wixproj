@@ -1,0 +1,9 @@
+﻿<Project Sdk="WixToolset.Sdk/4.0.0">
+	<PropertyGroup>
+		<ProductName>Universe Gbx Addons for Windows File Explorer (Icon overlay)</ProductName>
+		<Name>Universe Gbx Addons for Windows File Explorer (Icon overlay)</Name>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\Src\WinFileExplorerGbxAddons.IconOverlay\WinFileExplorerGbxAddons.IconOverlay.csproj" />
+	</ItemGroup>
+</Project>

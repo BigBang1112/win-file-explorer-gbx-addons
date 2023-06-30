@@ -33,7 +33,7 @@ public partial class GbxIconOverlay : IShellIconOverlayIdentifier
 
     public int GetOverlayInfo(nint iconFileBuffer, int iconFileBufferSize, out int iconIndex, out uint flags)
     {
-        var iconFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), "WinFileExplorerGbxAddons", "gbx.ico");
+        var iconFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), "BigBang1112", "WinFileExplorerGbxAddons", "IconOverlay", "Gbx.ico");
         var bytes = System.Text.Encoding.Unicode.GetBytes(iconFile);
 
         if (bytes.Length + 2 < iconFileBufferSize)
