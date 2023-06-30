@@ -31,7 +31,7 @@ jobs:
   
     strategy:
       matrix:
-        addon: [{ name: Thumbnail, runtime: x64 }, { name: Thumbnail, runtime: x86 }]
+        addon: [{ name: Thumbnail, runtime: x64 }, { name: Thumbnail, runtime: x86 }, { name: IconOverlay, runtime: x64 }, { name: IconOverlay, runtime: x86 }]
 
     runs-on: windows-latest
     
@@ -98,6 +98,8 @@ jobs:
         run: |
           echo "HashThumbnailX64=$(tr -d '\r' < WinFileExplorerGbxAddons.Thumbnail.msi.hash.x64.txt)" >> $GITHUB_ENV
           echo "HashThumbnailX86=$(tr -d '\r' < WinFileExplorerGbxAddons.Thumbnail.msi.hash.x86.txt)" >> $GITHUB_ENV
+          echo "HashIconOverlayX64=$(tr -d '\r' < WinFileExplorerGbxAddons.IconOverlay.msi.hash.x64.txt)" >> $GITHUB_ENV
+          echo "HashIconOverlayX86=$(tr -d '\r' < WinFileExplorerGbxAddons.IconOverlay.msi.hash.x86.txt)" >> $GITHUB_ENV
       
       - name: Set release information
-        run: gh release edit ${{ github.ref_name }} -n "$(echo -e '${{ github.event.release.body }}\n\n**WinFileExplorerGbxAddons.Thumbnail SHA256 x64** `${{ env.HashThumbnailX64 }}`\n**WinFileExplorerGbxAddons.Thumbnail SHA256 x86** `${{ env.HashThumbnailX86 }}`\n\nAssets were automatically generated using the [publish workflow](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}).')"
+        run: gh release edit ${{ github.ref_name }} -n "$(echo -e '${{ github.event.release.body }}\n\n### WinFileExplorerGbxAddons.Thumbnail\n\n**SHA256 x64** `${{ env.HashThumbnailX64 }}`\n**SHA256 x86** `${{ env.HashThumbnailX86 }}`\n\n### WinFileExplorerGbxAddons.IconOverlay\n\n**SHA256 x64** `${{ env.HashIconOverlayX64 }}`\n**SHA256 x86** `${{ env.HashIconOverlayX86 }}`\n\nAssets were automatically generated using the [publish workflow](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}).')"
