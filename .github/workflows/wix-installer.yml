@@ -18,13 +18,13 @@ jobs:
     - name: Install dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build Src/WinFileExplorerGbxAddons.Thumbnail -r win-x86 -c Release --no-restore
+      run: dotnet build Src/WinFileExplorerGbxAddons.Thumbnail -r win-x64 -c Release --no-restore --no-self-contained'
     - name: Test
       run: dotnet test Tests/WinFileExplorerGbxAddons.Thumbnail.Tests --no-restore --verbosity normal
     - name: Install Wix
       run: dotnet tool install --global wix
     - name: Build Setup
-      run: dotnet build -c Release /p:Platform=x86 -o setup Installers\WinFileExplorerGbxAddons.Thumbnail
+      run: dotnet build -c Release /p:Platform=x64 -o setup Installers\WinFileExplorerGbxAddons.Thumbnail
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.2
       with:
