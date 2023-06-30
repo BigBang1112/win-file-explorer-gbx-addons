@@ -14,14 +14,15 @@
 
 **Package name: `WinFileExplorerGbxAddons.Thumbnail`**
 
-1. Shows thumbnail on all `CGameCtnChallenge` files:
+- Shows thumbnail on all `CGameCtnChallenge` files:
     - Challenge.Gbx
     - Map.Gbx
-2. Shows icons on all `CGameCtnCollector` files:
+- Shows icons on all `CGameCtnCollector` files:
     - Item.Gbx / Block.Gbx / ObjectInfo.Gbx
     - Macroblock.Gbx
     - Decoration.Gbx
     - (TM)ED___.Gbx
+    - Also works for modern WEBP icons
 
 ## Gbx Icon Overlay
 
