@@ -50,7 +50,9 @@ winget install WinFileExplorerGbxAddons.IconOverlay
 
 4. Done.
 
-In most cases, the changes should appear immediately. In rare cases, you need to log in/out from Windows or restart it.
+In most cases, the changes should appear immediately.
+
+In rare cases, you need to log in/out from Windows or restart it.
 
 Each `WinFileExplorerGbxAddons` package is independent, you can only install those that you want.
 
