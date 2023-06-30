@@ -62,3 +62,5 @@ Each `WinFileExplorerGbxAddons` package is independent, you can only install tho
 2. Download the [latest .MSI release](https://github.com/BigBang1112/win-file-explorer-gbx-addons/releases) of the addons you want according to your OS
 3. Run the .MSI and proceed.
 4. Done.
+
+<h2 align="center">#20yearsoftrackmania</h2>
