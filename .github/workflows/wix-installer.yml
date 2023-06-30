@@ -1,4 +1,4 @@
-name: .NET Core Build
+name: Build Installer
 
 on:
   push:
@@ -6,6 +6,10 @@ on:
 
 jobs:
   build:
+  
+    strategy:
+      matrix:
+        runtime: [ x64, x86 ]
 
     runs-on: windows-latest
 
@@ -17,13 +21,14 @@ jobs:
         dotnet-version: 7.0.x
     - name: Install dependencies
       run: dotnet restore
-    - name: Build
+    - name: Test
       run: dotnet test Tests/WinFileExplorerGbxAddons.Thumbnail.Tests --no-restore --verbosity normal
     - name: Install Wix
       run: dotnet tool install --global wix
     - name: Build Setup
-      run: dotnet build -c Release -r win-x64 /p:Platform=x64 -o setup Installers\WinFileExplorerGbxAddons.Thumbnail
+      run: dotnet build -c Release -r win-${{ matrix.runtime }} /p:Platform=${{ matrix.runtime }} -o setup Installers\WinFileExplorerGbxAddons.Thumbnail --no-self-contained
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.2
       with:
+        name: ${{ matrix.runtime }}
         path: setup/en-US
