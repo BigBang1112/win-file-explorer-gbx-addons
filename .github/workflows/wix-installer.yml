@@ -34,6 +34,9 @@ jobs:
         addon: [{ name: Thumbnail, runtime: x64 }, { name: Thumbnail, runtime: x86 }]
 
     runs-on: windows-latest
+    
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
     - uses: actions/checkout@v2
