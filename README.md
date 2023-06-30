@@ -1,14 +1,14 @@
-![Universe Gbx Preview for Windows File Explorer](UniverseGbxPreview.png)
+![Universe Gbx Addons for Windows File Explorer](UniverseGbxAddons.png)
 
 <p align="center">Happy to present a couple of addons to make Gbx file scrolling just a little more comfortable on Windows.</p>
 
 <p align="center">Due to usage of COM, these addons are supported widely across alternative file browsers on Windows.</p>
 
-[![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/BigBang1112/win-file-explorer-gbx-preview?include_prereleases&style=for-the-badge)](https://github.com/BigBang1112/win-file-explorer-gbx-preview/releases) [![GitHub all releases](https://img.shields.io/github/downloads/BigBang1112/win-file-explorer-gbx-preview/total?style=for-the-badge)](https://github.com/BigBang1112/win-file-explorer-gbx-preview/releases)
+[![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/BigBang1112/win-file-explorer-gbx-addons?include_prereleases&style=for-the-badge)](https://github.com/BigBang1112/win-file-explorer-gbx-addons/releases) [![GitHub all releases](https://img.shields.io/github/downloads/BigBang1112/win-file-explorer-gbx-addons/total?style=for-the-badge)](https://github.com/BigBang1112/win-file-explorer-gbx-addons/releases)
 
 ## Thumbnail / Icon
 
-**Package name: `WinFileExplorerGbxPreview.Thumbnail`**
+**Package name: `WinFileExplorerGbxAddons.Thumbnail`**
 
 1. Shows thumbnail on all `CGameCtnChallenge` files:
     - Challenge.Gbx
@@ -21,7 +21,7 @@
 
 ## Gbx Icon Overlay
 
-**Package name: `WinFileExplorerGbxPreview.IconOverlay`**
+**Package name: `WinFileExplorerGbxAddons.IconOverlay`**
 
 Shows a small Gbx icon on top of the file thumbnail, making it easier to distinguish image file from Gbx file for example.
 
@@ -40,13 +40,13 @@ Shows a small Gbx icon on top of the file thumbnail, making it easier to disting
 ```
 winget install Microsoft.DotNet.Runtime.7
 winget source add --name BigBang1112 https://winget.bigbang1112.cz -t Microsoft.Rest
-winget install WinFileExplorerGbxPreview.Thumbnail
-winget install WinFileExplorerGbxPreview.IconOverlay
+winget install WinFileExplorerGbxAddons.Thumbnail
+winget install WinFileExplorerGbxAddons.IconOverlay
 ```
 
 In most cases, the changes should appear immediately. In rare cases, you need to log in/out from Windows or restart it.
 
-Each `WinFileExplorerGbxPreview` package is independent, you can only install those that you want.
+Each `WinFileExplorerGbxAddons` package is independent, you can only install those that you want.
 
 > Many of my other projects will be coming to WinGet soon too!
 

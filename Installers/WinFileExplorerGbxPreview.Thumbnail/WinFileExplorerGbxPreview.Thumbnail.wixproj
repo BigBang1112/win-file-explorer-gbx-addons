@@ -1,9 +1,0 @@
-﻿<Project Sdk="WixToolset.Sdk/4.0.0">
-	<PropertyGroup>
-		<ProductName>Universe Gbx Preview for Windows File Explorer (Thumbnail)</ProductName>
-		<Name>Universe Gbx Preview for Windows File Explorer (Thumbnail)</Name>
-	</PropertyGroup>
-	<ItemGroup>
-		<ProjectReference Include="..\..\Src\WinFileExplorerGbxPreview.Thumbnail\WinFileExplorerGbxPreview.Thumbnail.csproj" />
-	</ItemGroup>
-</Project>

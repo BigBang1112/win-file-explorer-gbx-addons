@@ -1,7 +1,7 @@
 ﻿using Microsoft.Win32;
 using System.Runtime.InteropServices;
 
-namespace WinFileExplorerGbxPreview.IconOverlay;
+namespace WinFileExplorerGbxAddons.IconOverlay;
 
 [ComVisible(true)]
 [Guid("dabfa3b2-7f7b-4dd9-a8b6-29bf7a3c0879")]
@@ -33,7 +33,7 @@ public partial class GbxIconOverlay : IShellIconOverlayIdentifier
 
     public int GetOverlayInfo(nint iconFileBuffer, int iconFileBufferSize, out int iconIndex, out uint flags)
     {
-        var iconFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), "WinFileExplorerGbxPreview", "gbx.ico");
+        var iconFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), "WinFileExplorerGbxAddons", "gbx.ico");
         var bytes = System.Text.Encoding.Unicode.GetBytes(iconFile);
 
         if (bytes.Length + 2 < iconFileBufferSize)

@@ -1,7 +1,7 @@
 <Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
 	<Fragment>
 		<StandardDirectory Id="ProgramFiles6432Folder">
-			<Directory Id="INSTALLFOLDER" Name="BigBang1112\WinFileExplorerGbxPreview\Thumbnail" />
+			<Directory Id="INSTALLFOLDER" Name="BigBang1112\WinFileExplorerGbxAddons\Thumbnail" />
 		</StandardDirectory>
 	</Fragment>
 </Wix>

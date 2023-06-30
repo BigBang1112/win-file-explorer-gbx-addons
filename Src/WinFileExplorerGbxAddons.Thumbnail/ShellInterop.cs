@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace WinFileExplorerGbxPreview.Thumbnail;
+namespace WinFileExplorerGbxAddons.Thumbnail;
 
 public sealed partial class ShellInterop
 {

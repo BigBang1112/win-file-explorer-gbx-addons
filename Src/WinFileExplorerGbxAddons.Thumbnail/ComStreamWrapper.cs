@@ -1,7 +1,7 @@
 ﻿using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
 
-namespace WinFileExplorerGbxPreview.Thumbnail;
+namespace WinFileExplorerGbxAddons.Thumbnail;
 
 public class ComStreamWrapper : Stream
 {

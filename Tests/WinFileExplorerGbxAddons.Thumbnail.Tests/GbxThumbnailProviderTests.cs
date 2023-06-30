@@ -3,7 +3,7 @@ using GBX.NET.Engines.GameData;
 using System.Drawing;
 using System.Drawing.Imaging;
 
-namespace WinFileExplorerGbxPreview.Thumbnail.Tests;
+namespace WinFileExplorerGbxAddons.Thumbnail.Tests;
 
 public class GbxThumbnailProviderTests
 {

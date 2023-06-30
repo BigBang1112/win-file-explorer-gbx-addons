@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace WinFileExplorerGbxPreview.IconOverlay;
+namespace WinFileExplorerGbxAddons.IconOverlay;
 
 [ComVisible(false)]
 [ComImport]

@@ -1,4 +1,4 @@
-﻿namespace WinFileExplorerGbxPreview.Thumbnail;
+﻿namespace WinFileExplorerGbxAddons.Thumbnail;
 
 public enum WTS_ALPHATYPE : uint
 {

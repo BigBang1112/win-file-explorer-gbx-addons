@@ -24,7 +24,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\Src\WinFileExplorerGbxPreview.Thumbnail\WinFileExplorerGbxPreview.Thumbnail.csproj" />
+		<ProjectReference Include="..\..\Src\WinFileExplorerGbxAddons.Thumbnail\WinFileExplorerGbxAddons.Thumbnail.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

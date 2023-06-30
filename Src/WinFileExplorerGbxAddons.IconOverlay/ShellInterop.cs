@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace WinFileExplorerGbxPreview.IconOverlay;
+namespace WinFileExplorerGbxAddons.IconOverlay;
 
 public sealed partial class ShellInterop
 {

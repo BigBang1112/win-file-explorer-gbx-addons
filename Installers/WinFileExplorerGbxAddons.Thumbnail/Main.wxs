@@ -3,19 +3,19 @@
 	<Fragment>
 		<ComponentGroup Id="Main" Directory="INSTALLFOLDER">
 			<Component>
-				<File Source="WinFileExplorerGbxPreview.Thumbnail.dll" />
+				<File Source="WinFileExplorerGbxAddons.Thumbnail.dll" />
 			</Component>
 			<Component>
-				<File Source="WinFileExplorerGbxPreview.Thumbnail.comhost.dll" />
+				<File Source="WinFileExplorerGbxAddons.Thumbnail.comhost.dll" />
 			</Component>
 			<Component>
-				<File Source="WinFileExplorerGbxPreview.Thumbnail.deps.json" />
+				<File Source="WinFileExplorerGbxAddons.Thumbnail.deps.json" />
 			</Component>
 			<Component>
-				<File Source="WinFileExplorerGbxPreview.Thumbnail.pdb" />
+				<File Source="WinFileExplorerGbxAddons.Thumbnail.pdb" />
 			</Component>
 			<Component>
-				<File Source="WinFileExplorerGbxPreview.Thumbnail.runtimeconfig.json" />
+				<File Source="WinFileExplorerGbxAddons.Thumbnail.runtimeconfig.json" />
 			</Component>
 			<Component>
 				<File Source="TmEssentials.dll" />

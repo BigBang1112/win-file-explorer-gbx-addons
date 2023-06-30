@@ -7,7 +7,7 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
 
-namespace WinFileExplorerGbxPreview.Thumbnail;
+namespace WinFileExplorerGbxAddons.Thumbnail;
 
 [ComVisible(true)]
 [Guid("41694c1a-d860-4fbe-855b-c9dbdf5b7057")]

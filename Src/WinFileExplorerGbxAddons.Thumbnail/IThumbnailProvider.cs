@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace WinFileExplorerGbxPreview.Thumbnail;
+namespace WinFileExplorerGbxAddons.Thumbnail;
 
 [ComVisible(true)]
 [Guid("e357fccd-a995-4576-b01f-234630154e96")]

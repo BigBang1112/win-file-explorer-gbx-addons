@@ -10,7 +10,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<InternalsVisibleTo Include="WinFileExplorerGbxPreview.Thumbnail.Tests" />
+		<InternalsVisibleTo Include="WinFileExplorerGbxAddons.Thumbnail.Tests" />
 	</ItemGroup>
 
 	<ItemGroup>

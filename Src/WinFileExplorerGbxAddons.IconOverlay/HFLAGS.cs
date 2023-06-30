@@ -1,4 +1,4 @@
-﻿namespace WinFileExplorerGbxPreview.IconOverlay;
+﻿namespace WinFileExplorerGbxAddons.IconOverlay;
 
 [Flags]
 public enum HFLAGS : uint
