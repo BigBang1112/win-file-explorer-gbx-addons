@@ -24,6 +24,8 @@
     - (TM)ED___.Gbx
     - Also works for modern WEBP icons
 
+![WinFileExplorerGbxAddons.Thumbnail example](Addon_Thumbnail_Example.jpg)
+
 ## Gbx Icon Overlay
 
 **Package name: `WinFileExplorerGbxAddons.IconOverlay`**
