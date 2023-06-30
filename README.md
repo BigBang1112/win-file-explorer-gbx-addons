@@ -1,10 +1,14 @@
 ![Universe Gbx Addons for Windows File Explorer](UniverseGbxAddons.png)
 
+<div align="center">
+
+[![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/BigBang1112/win-file-explorer-gbx-addons?include_prereleases&style=for-the-badge)](https://github.com/BigBang1112/win-file-explorer-gbx-addons/releases) [![GitHub all releases](https://img.shields.io/github/downloads/BigBang1112/win-file-explorer-gbx-addons/total?style=for-the-badge)](https://github.com/BigBang1112/win-file-explorer-gbx-addons/releases)
+
+</div>
+
 <p align="center">Happy to present a couple of addons to make Gbx file scrolling just a little more comfortable on Windows.</p>
 
 <p align="center">Due to usage of COM, these addons are supported widely across alternative file browsers on Windows.</p>
-
-[![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/BigBang1112/win-file-explorer-gbx-addons?include_prereleases&style=for-the-badge)](https://github.com/BigBang1112/win-file-explorer-gbx-addons/releases) [![GitHub all releases](https://img.shields.io/github/downloads/BigBang1112/win-file-explorer-gbx-addons/total?style=for-the-badge)](https://github.com/BigBang1112/win-file-explorer-gbx-addons/releases)
 
 ## Thumbnail / Icon
 
