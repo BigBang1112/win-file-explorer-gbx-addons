@@ -18,7 +18,7 @@ jobs:
     - name: Install dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build Src/WinFileExplorerGbxAddons.Thumbnail -c Release /p:Platform=x64 --no-restore --no-self-contained
+      run: dotnet build Src/WinFileExplorerGbxAddons.Thumbnail -c Release /p:RuntimeIdentifier=win-x64 /p:Platform=x64 --no-restore --no-self-contained
     - name: Test
       run: dotnet test Tests/WinFileExplorerGbxAddons.Thumbnail.Tests --no-restore --verbosity normal
     - name: Install Wix
