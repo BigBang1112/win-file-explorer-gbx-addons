@@ -24,6 +24,8 @@ Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "WinFileExplorerGbxAddons.Th
 EndProject
 Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "WinFileExplorerGbxAddons.IconOverlay", "Installers\WinFileExplorerGbxAddons.IconOverlay\WinFileExplorerGbxAddons.IconOverlay.wixproj", "{BC479CDE-CCC0-4B98-B007-D6E75185A12B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFileExplorerGbxAddons.IconOverlay.Tests", "Tests\WinFileExplorerGbxAddons.IconOverlay.Tests\WinFileExplorerGbxAddons.IconOverlay.Tests.csproj", "{6799DCBC-22BA-4C0E-8A2D-50AC67860CEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -116,6 +118,22 @@ Global
 		{BC479CDE-CCC0-4B98-B007-D6E75185A12B}.Release|x64.Build.0 = Release|x64
 		{BC479CDE-CCC0-4B98-B007-D6E75185A12B}.Release|x86.ActiveCfg = Release|x86
 		{BC479CDE-CCC0-4B98-B007-D6E75185A12B}.Release|x86.Build.0 = Release|x86
+		{6799DCBC-22BA-4C0E-8A2D-50AC67860CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6799DCBC-22BA-4C0E-8A2D-50AC67860CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6799DCBC-22BA-4C0E-8A2D-50AC67860CEC}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{6799DCBC-22BA-4C0E-8A2D-50AC67860CEC}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{6799DCBC-22BA-4C0E-8A2D-50AC67860CEC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6799DCBC-22BA-4C0E-8A2D-50AC67860CEC}.Debug|x64.Build.0 = Debug|Any CPU
+		{6799DCBC-22BA-4C0E-8A2D-50AC67860CEC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6799DCBC-22BA-4C0E-8A2D-50AC67860CEC}.Debug|x86.Build.0 = Debug|Any CPU
+		{6799DCBC-22BA-4C0E-8A2D-50AC67860CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6799DCBC-22BA-4C0E-8A2D-50AC67860CEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6799DCBC-22BA-4C0E-8A2D-50AC67860CEC}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{6799DCBC-22BA-4C0E-8A2D-50AC67860CEC}.Release|ARM64.Build.0 = Release|Any CPU
+		{6799DCBC-22BA-4C0E-8A2D-50AC67860CEC}.Release|x64.ActiveCfg = Release|Any CPU
+		{6799DCBC-22BA-4C0E-8A2D-50AC67860CEC}.Release|x64.Build.0 = Release|Any CPU
+		{6799DCBC-22BA-4C0E-8A2D-50AC67860CEC}.Release|x86.ActiveCfg = Release|Any CPU
+		{6799DCBC-22BA-4C0E-8A2D-50AC67860CEC}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -126,6 +144,7 @@ Global
 		{805E7D17-5C79-40DD-BC71-5E23F7DE0C4C} = {67C09BCE-2039-44B1-9BFD-E33F88315C07}
 		{F8705939-1CFD-4F71-BCF9-DB1E59675AED} = {A199D0F7-7762-4A7E-A7D6-BB652B81C829}
 		{BC479CDE-CCC0-4B98-B007-D6E75185A12B} = {A199D0F7-7762-4A7E-A7D6-BB652B81C829}
+		{6799DCBC-22BA-4C0E-8A2D-50AC67860CEC} = {67C09BCE-2039-44B1-9BFD-E33F88315C07}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BBAFCD2B-7E04-48A0-A832-4989FCB5BEEF}
