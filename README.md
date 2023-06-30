@@ -69,6 +69,8 @@ You need .NET 7 SDK and Wix Toolset to build the solution fully.
 
 In Visual Studio, you can simply install HeatWave extension, which will automatically prepare Wix for you.
 
+To test the addon after building (which is a COM library), use `regsvr32.exe [addon].comhost.dll` to install the addon and `regsvr32.exe /u [addon].comhost.dll` to uninstall it.
+
 ## Special thanks
 
 To people sharing their development problems on the internet, this was really hard to put together.
