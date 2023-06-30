@@ -65,6 +65,10 @@ Each `WinFileExplorerGbxAddons` package is independent, you can only install tho
 3. Run the .MSI and proceed.
 4. Done.
 
+In most cases, the changes should appear immediately.
+
+In rare cases, you need to log in/out from Windows or restart it.
+
 ## Build
 
 You need .NET 7 SDK and Wix Toolset to build the solution fully.
