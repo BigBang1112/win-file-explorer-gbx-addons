@@ -63,7 +63,7 @@ jobs:
         $hashValue | Out-File -FilePath "setup/en-US/WinFileExplorerGbxAddons.${{ matrix.addon.name }}.msi.hash.${{ matrix.addon.runtime }}.txt"
         
     - name: Upload WinFileExplorerGbxAddons.${{ matrix.addon.name }}.msi to this release
-      run: gh release upload ${{ github.ref_name }} WinFileExplorerGbxAddons.${{ matrix.addon.name }}.msi#Installer (${{ matrix.addon.name }}, ${{ matrix.addon.runtime }})
+      run: gh release upload ${{ github.ref_name }} "WinFileExplorerGbxAddons.${{ matrix.addon.name }}.msi#Installer (${{ matrix.addon.name }}, ${{ matrix.addon.runtime }})"
     
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.2
