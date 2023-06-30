@@ -12,6 +12,8 @@
 
 ## Thumbnail / Icon
 
+![WinFileExplorerGbxAddons.Thumbnail example](Addon_Thumbnail_Example.jpg)
+
 **Package name: `WinFileExplorerGbxAddons.Thumbnail`**
 
 - Shows thumbnail on all `CGameCtnChallenge` files:
@@ -23,8 +25,6 @@
     - Decoration.Gbx
     - (TM)ED___.Gbx
     - Also works for modern WEBP icons
-
-![WinFileExplorerGbxAddons.Thumbnail example](Addon_Thumbnail_Example.jpg)
 
 ## Gbx Icon Overlay
 
