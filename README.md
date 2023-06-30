@@ -51,8 +51,8 @@ Shows a small Gbx icon on top of the file thumbnail, making it easier to disting
 ```
 winget install Microsoft.DotNet.Runtime.7
 winget source add --name BigBang1112 https://winget.bigbang1112.cz -t Microsoft.Rest
-winget install WinFileExplorerGbxAddons.Thumbnail
-winget install WinFileExplorerGbxAddons.IconOverlay
+winget install BigBang1112.WinFileExplorerGbxAddons.Thumbnail
+winget install BigBang1112.WinFileExplorerGbxAddons.IconOverlay
 ```
 
 4. Done.
