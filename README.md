@@ -8,7 +8,9 @@
 
 <p align="center">Happy to present a couple of addons to make Gbx file scrolling just a little more comfortable on Windows.</p>
 
-<p align="center">Due to usage of COM, these addons are supported widely across alternative file browsers on Windows.</p>
+<p align="center">Due to the usage of COM, these addons are supported widely across alternative file browsers on Windows.</p>
+
+<p align="center">Powered by <a href="https://github.com/BigBang1112/gbx-net">GBX.NET</a>.</p>
 
 ## Thumbnail / Icon
 
@@ -53,18 +55,16 @@ winget install WinFileExplorerGbxAddons.IconOverlay
 
 4. Done.
 
-In most cases, the changes should appear immediately.
+The changes should appear immediately. In rare cases, you need to log in/out from Windows or restart it.
 
-In rare cases, you need to log in/out from Windows or restart it.
-
-Each `WinFileExplorerGbxAddons` package is independent, you can only install those that you want.
+Each `WinFileExplorerGbxAddons` package is independent, you can only install those you want.
 
 > Many of my other projects will be coming soon to WinGet as well!
 
 ### Alternative (manually via .msi file download)
 
-1. Install [.NET 7 Runtime (desktop apps)](https://dotnet.microsoft.com/en-us/download/dotnet/7.0/runtime)
-2. Download the [latest MSI release](https://github.com/BigBang1112/win-file-explorer-gbx-addons/releases) of the addons you want according to your OS
+1. Install [.NET 7 Runtime (desktop apps)](https://dotnet.microsoft.com/en-us/download/dotnet/7.0/runtime).
+2. Download the [latest MSI release](https://github.com/BigBang1112/win-file-explorer-gbx-addons/releases) of the addons you want according to your OS.
 3. Run the MSI and proceed.
 4. Done.
 
