@@ -38,7 +38,7 @@ Shows a small Gbx icon on top of the file thumbnail, making it easier to disting
 > !!! All WinGet packages coming from the BigBang1112 GitHub account will be available **ONLY on https://winget.bigbang1112.cz** !!!
 
 1. Install [WinGet](https://www.microsoft.com/p/app-installer/9nblggh4nns1) via Microsoft Store.
-2. In your Start Menu, type `cmd`, press Enter.
+2. In your Start Menu, type `cmd`, and press Enter.
 3. Type these commands below (individually):
 
 ```
@@ -48,12 +48,17 @@ winget install WinFileExplorerGbxAddons.Thumbnail
 winget install WinFileExplorerGbxAddons.IconOverlay
 ```
 
+4. Done.
+
 In most cases, the changes should appear immediately. In rare cases, you need to log in/out from Windows or restart it.
 
 Each `WinFileExplorerGbxAddons` package is independent, you can only install those that you want.
 
-> Many of my other projects will be coming to WinGet soon too!
+> Many of my other projects will be coming soon to WinGet as well!
 
 ### Alternative (manually via .msi file download)
 
-TODO
+1. Install [.NET 7 Runtime (desktop apps)](https://dotnet.microsoft.com/en-us/download/dotnet/7.0/runtime)
+2. Download the [latest .MSI release](https://github.com/BigBang1112/win-file-explorer-gbx-addons/releases) according to your OS
+3. Run the .MSI and proceed.
+4. Done.
