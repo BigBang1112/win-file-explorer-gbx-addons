@@ -63,4 +63,14 @@ Each `WinFileExplorerGbxAddons` package is independent, you can only install tho
 3. Run the .MSI and proceed.
 4. Done.
 
+## Build
+
+You need .NET 7 SDK and Wix Toolset to build the solution fully.
+
+In Visual Studio, you can simply install HeatWave extension, which will automatically prepare Wix for you.
+
+## Special thanks
+
+To people sharing their development problems on the internet, this was really hard to put together.
+
 <h2 align="center">#20yearsoftrackmania</h2>
