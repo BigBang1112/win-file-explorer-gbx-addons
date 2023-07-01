@@ -46,7 +46,7 @@ Shows a small Gbx icon on top of the file thumbnail, making it easier to disting
 
 1. Install [WinGet](https://www.microsoft.com/p/app-installer/9nblggh4nns1) via Microsoft Store.
 2. In your Start Menu, type `cmd`, and Run as Administrator.
-3. Type these commands below (individually):
+3. Execute these commands below (you can all at once):
 
 ```
 winget install Microsoft.DotNet.Runtime.7
