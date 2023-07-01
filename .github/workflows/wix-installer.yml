@@ -60,21 +60,19 @@ jobs:
     
     - name: Calculate SHA256
       run: |
-        $hash = Get-FileHash -Path 'setup/en-US/WinFileExplorerGbxAddons.${{ matrix.addon.name }}.msi' -Algorithm SHA256
+        $hash = Get-FileHash -Path 'setup/en-US/WinFileExplorerGbxAddons.${{ matrix.addon.name }}.${{ matrix.addon.runtime }}.msi' -Algorithm SHA256
         $hashValue = $hash.Hash.ToLower()
         Write-Host $hashValue
-        $hashValue | Out-File -FilePath "setup/en-US/WinFileExplorerGbxAddons.${{ matrix.addon.name }}.msi.hash.${{ matrix.addon.runtime }}.txt"
+        $hashValue | Out-File -FilePath "setup/en-US/WinFileExplorerGbxAddons.${{ matrix.addon.name }}.${{ matrix.addon.runtime }}.msi.hash.txt"
         
     - name: Upload WinFileExplorerGbxAddons.${{ matrix.addon.name }}.msi to this release
-      run: |
-        mv setup/en-US/WinFileExplorerGbxAddons.${{ matrix.addon.name }}.msi setup/en-US/WinFileExplorerGbxAddons.${{ matrix.addon.name }}.${{ matrix.addon.runtime }}.msi
-        gh release upload ${{ github.ref_name }} "setup/en-US/WinFileExplorerGbxAddons.${{ matrix.addon.name }}.${{ matrix.addon.runtime }}.msi#Installer (${{ matrix.addon.name }}, ${{ matrix.addon.runtime }})"
+      run: gh release upload ${{ github.ref_name }} "setup/en-US/WinFileExplorerGbxAddons.${{ matrix.addon.name }}.${{ matrix.addon.runtime }}.msi#Installer (${{ matrix.addon.name }}, ${{ matrix.addon.runtime }})"
     
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.2
       with:
         name: ${{ env.ARTIFACT_NAME }}
-        path: setup/en-US/WinFileExplorerGbxAddons.${{ matrix.addon.name }}.msi.hash.${{ matrix.addon.runtime }}.txt
+        path: setup/en-US/WinFileExplorerGbxAddons.${{ matrix.addon.name }}.${{ matrix.addon.runtime }}.msi.hash.txt
         if-no-files-found: error
   
   finalize-description:
@@ -96,10 +94,10 @@ jobs:
       
       - name: Read hash files
         run: |
-          echo "HashThumbnailX64=$(tr -d '\r' < WinFileExplorerGbxAddons.Thumbnail.msi.hash.x64.txt)" >> $GITHUB_ENV
-          echo "HashThumbnailX86=$(tr -d '\r' < WinFileExplorerGbxAddons.Thumbnail.msi.hash.x86.txt)" >> $GITHUB_ENV
-          echo "HashIconOverlayX64=$(tr -d '\r' < WinFileExplorerGbxAddons.IconOverlay.msi.hash.x64.txt)" >> $GITHUB_ENV
-          echo "HashIconOverlayX86=$(tr -d '\r' < WinFileExplorerGbxAddons.IconOverlay.msi.hash.x86.txt)" >> $GITHUB_ENV
+          echo "HashThumbnailX64=$(tr -d '\r' < WinFileExplorerGbxAddons.Thumbnail.x64.msi.hash.txt)" >> $GITHUB_ENV
+          echo "HashThumbnailX86=$(tr -d '\r' < WinFileExplorerGbxAddons.Thumbnail.x86.msi.hash.txt)" >> $GITHUB_ENV
+          echo "HashIconOverlayX64=$(tr -d '\r' < WinFileExplorerGbxAddons.IconOverlay.x64.msi.hash.txt)" >> $GITHUB_ENV
+          echo "HashIconOverlayX86=$(tr -d '\r' < WinFileExplorerGbxAddons.IconOverlay.x86.msi.hash.txt)" >> $GITHUB_ENV
       
       - name: Set release information
         run: gh release edit ${{ github.ref_name }} -n "$(echo -e '${{ github.event.release.body }}\n\n### WinFileExplorerGbxAddons.Thumbnail\n\n**SHA256 x64** `${{ env.HashThumbnailX64 }}`\n**SHA256 x86** `${{ env.HashThumbnailX86 }}`\n\n### WinFileExplorerGbxAddons.IconOverlay\n\n**SHA256 x64** `${{ env.HashIconOverlayX64 }}`\n**SHA256 x86** `${{ env.HashIconOverlayX86 }}`\n\nAssets were automatically generated using the [publish workflow](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}).')"
