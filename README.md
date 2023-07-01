@@ -45,7 +45,7 @@ Shows a small Gbx icon on top of the file thumbnail, making it easier to disting
 > !!! All WinGet packages coming from the BigBang1112 GitHub account will be available **ONLY on https://winget.bigbang1112.cz** !!!
 
 1. Install [WinGet](https://www.microsoft.com/p/app-installer/9nblggh4nns1) via Microsoft Store.
-2. In your Start Menu, type `cmd`, and press Enter.
+2. In your Start Menu, type `cmd`, and Run as Administrator.
 3. Type these commands below (individually):
 
 ```
