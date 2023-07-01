@@ -3,6 +3,7 @@
 		<ProductName>Universe Gbx Addons for Windows File Explorer (Thumbnail)</ProductName>
 		<Name>Universe Gbx Addons for Windows File Explorer (Thumbnail)</Name>
 		<OutputName>WinFileExplorerGbxAddons.Thumbnail.$(Platform)</OutputName>
+		<ProjectGuid>{8cb863dd-4a6f-48ce-8cc9-18a756d302a7}</ProjectGuid>
 	</PropertyGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\..\Src\WinFileExplorerGbxAddons.Thumbnail\WinFileExplorerGbxAddons.Thumbnail.csproj" />

@@ -3,6 +3,7 @@
 		<ProductName>Universe Gbx Addons for Windows File Explorer (Icon overlay)</ProductName>
 		<Name>Universe Gbx Addons for Windows File Explorer (Icon overlay)</Name>
 		<OutputName>WinFileExplorerGbxAddons.IconOverlay.$(Platform)</OutputName>
+		<ProjectGuid>{7f40b93b-0591-4175-b7ed-7612b79b78dd}</ProjectGuid>
 	</PropertyGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\..\Src\WinFileExplorerGbxAddons.IconOverlay\WinFileExplorerGbxAddons.IconOverlay.csproj" />
