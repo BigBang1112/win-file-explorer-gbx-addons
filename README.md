@@ -14,9 +14,9 @@
 
 ## Thumbnail / Icon
 
-![WinFileExplorerGbxAddons.Thumbnail example](Addon_Thumbnail_Example.jpg)
-
 **Package name: `WinFileExplorerGbxAddons.Thumbnail`**
+
+![WinFileExplorerGbxAddons.Thumbnail example](Addon_Thumbnail_Example.jpg)
 
 - Shows thumbnail on all `CGameCtnChallenge` files:
     - Challenge.Gbx
@@ -30,9 +30,9 @@
 
 ## Gbx Icon Overlay
 
-![WinFileExplorerGbxAddons.IconOverlay example](Addon_IconOverlay_Example.jpg)
-
 **Package name: `WinFileExplorerGbxAddons.IconOverlay`**
+
+![WinFileExplorerGbxAddons.IconOverlay example](Addon_IconOverlay_Example.jpg)
 
 Shows a small Gbx icon on top of the file thumbnail, making it easier to distinguish image file from Gbx file for example.
 
