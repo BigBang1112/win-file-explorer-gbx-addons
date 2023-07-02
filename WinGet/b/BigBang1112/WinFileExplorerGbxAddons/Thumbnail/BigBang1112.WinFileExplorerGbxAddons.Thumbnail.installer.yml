@@ -1,0 +1,15 @@
+PackageIdentifier: BigBang1112.WinFileExplorerGbxAddons.Thumbnail
+PackageVersion: 1.0.0
+ReleaseDate: 2023-07-01
+InstallerType: wix
+Installers: 
+ - Architecture: x64
+   InstallerUrl: https://github.com/BigBang1112/win-file-explorer-gbx-addons/releases/download/v1.0.0/WinFileExplorerGbxAddons.Thumbnail.x64.msi
+   InstallerSha256: fca448e24b3adf0104c57a2b95ffcc7024406c20b92fbbca35e85c63de68a74d
+   ProductCode: '{20AD2FBF-29F9-4D77-9D3D-8599B5CFF0DC}'
+ - Architecture: x86
+   InstallerUrl: https://github.com/BigBang1112/win-file-explorer-gbx-addons/releases/download/v1.0.0/WinFileExplorerGbxAddons.Thumbnail.x86.msi
+   InstallerSha256: 6ef7eb27af4a7817efa0931c3db8821ba6a6ba284ee1d25c222e683a5b69ca8d
+   ProductCode: '{20AD2FBF-29F9-4D77-9D3D-8599B5CFF0DC}'
+ManifestType: installer
+ManifestVersion: 1.1.0

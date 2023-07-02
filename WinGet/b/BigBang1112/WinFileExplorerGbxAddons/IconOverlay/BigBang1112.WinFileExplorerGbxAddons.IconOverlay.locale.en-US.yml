@@ -1,0 +1,10 @@
+PackageIdentifier: BigBang1112.WinFileExplorerGbxAddons.IconOverlay
+PackageVersion: 1.0.0
+PackageLocale: en-US
+Publisher: BigBang1112
+PackageName: Universe Gbx Addons for Windows File Explorer (Icon Overlay)
+PackageUrl: https://github.com/BigBang1112/win-file-explorer-gbx-addons
+License: MIT
+ShortDescription: Gbx-related addons for Windows File Explorer (gbx icon overlay).
+ManifestType: defaultLocale
+ManifestVersion: 1.1.0
