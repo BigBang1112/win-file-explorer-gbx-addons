@@ -1,4 +1,6 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.IO;
+using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
 
 namespace WinFileExplorerGbxAddons.Thumbnail;
@@ -32,7 +34,7 @@ public class ComStreamWrapper : Stream
     {
         get
         {
-            mSource.Stat(out STATSTG stat, 1);
+            mSource.Stat(out var stat, 1);
             return stat.cbSize;
         }
     }
@@ -74,6 +76,6 @@ public class ComStreamWrapper : Stream
             throw new NotImplementedException();
         }
 
-        mSource.Write(buffer, count, nint.Zero);
+        mSource.Write(buffer, count, IntPtr.Zero);
     }
 }

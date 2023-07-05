@@ -1,4 +1,6 @@
 ﻿using Microsoft.Win32;
+using System;
+using System.IO;
 using System.Runtime.InteropServices;
 
 namespace WinFileExplorerGbxAddons.IconOverlay;
@@ -31,7 +33,7 @@ public partial class GbxIconOverlay : IShellIconOverlayIdentifier
         return (int)HRESULT.S_OK;
     }
 
-    public int GetOverlayInfo(nint iconFileBuffer, int iconFileBufferSize, out int iconIndex, out uint flags)
+    public int GetOverlayInfo(IntPtr iconFileBuffer, int iconFileBufferSize, out int iconIndex, out uint flags)
     {
         var iconFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), "BigBang1112", "WinFileExplorerGbxAddons", "IconOverlay", "Gbx.ico");
         var bytes = System.Text.Encoding.Unicode.GetBytes(iconFile);
@@ -59,13 +61,13 @@ public partial class GbxIconOverlay : IShellIconOverlayIdentifier
         var regKey = Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\" + t.Name);
         regKey.SetValue("", t.GUID.ToString("B"));
         regKey.Close();
-        ShellInterop.SHChangeNotify(0x08000000, 0, nint.Zero, nint.Zero);
+        ShellInterop.SHChangeNotify(0x08000000, 0, IntPtr.Zero, IntPtr.Zero);
     }
 
     [ComUnregisterFunction]
     public static void UnregisterFunction(Type t)
     {
         Registry.LocalMachine.DeleteSubKeyTree(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\" + t.Name);
-        ShellInterop.SHChangeNotify(0x08000000, 0, nint.Zero, nint.Zero);
+        ShellInterop.SHChangeNotify(0x08000000, 0, IntPtr.Zero, IntPtr.Zero);
     }
 }

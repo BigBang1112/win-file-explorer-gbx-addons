@@ -1,4 +1,6 @@
-﻿namespace WinFileExplorerGbxAddons.IconOverlay;
+﻿using System;
+
+namespace WinFileExplorerGbxAddons.IconOverlay;
 
 [Flags]
 public enum HRESULT : uint

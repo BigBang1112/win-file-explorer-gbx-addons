@@ -104,13 +104,13 @@ public class GbxThumbnailProviderTests
     }
 
     [Fact]
-    public async Task GetIconBitmap_HasIconWebP_ResizeBitmap()
+    public void GetIconBitmap_HasIconWebP_ResizeBitmap()
     {
         // Arrange
         var expectedSize = 64;
         
         var collector = (CGameCtnCollector)Activator.CreateInstance(typeof(CGameCtnCollector), nonPublic: true)!;
-        collector.IconWebP = await File.ReadAllBytesAsync("icon.webp");
+        collector.IconWebP = File.ReadAllBytes("icon.webp");
 
         // Act
         var bmp = GbxThumbnailProvider.GetIconBitmap(collector, expectedSize);

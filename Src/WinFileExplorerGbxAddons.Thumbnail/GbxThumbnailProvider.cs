@@ -3,7 +3,11 @@ using GBX.NET.Engines.Game;
 using GBX.NET.Engines.GameData;
 using GBX.NET.Imaging;
 using Microsoft.Win32;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Processing;
+using System;
 using System.Drawing;
+using System.IO;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
 
@@ -33,7 +37,7 @@ public class GbxThumbnailProvider : IThumbnailProvider, IInitializeWithStream
         pdwAlpha = WTS_ALPHATYPE.WTSAT_ARGB;
 
         // Set phbmp to nint.Zero if the thumbnail cannot be generated
-        phbmp = nint.Zero;
+        phbmp = IntPtr.Zero;
 
         if (stream is null)
         {
@@ -156,7 +160,7 @@ public class GbxThumbnailProvider : IThumbnailProvider, IInitializeWithStream
         var regKey = Registry.LocalMachine.CreateSubKey(@"SOFTWARE\Classes\.gbx\ShellEx\{e357fccd-a995-4576-b01f-234630154e96}");
         regKey.SetValue("", t.GUID.ToString("B").ToUpperInvariant());
         regKey.Close();
-        ShellInterop.SHChangeNotify(0x08000000, 0, nint.Zero, nint.Zero);
+        ShellInterop.SHChangeNotify(0x08000000, 0, IntPtr.Zero, IntPtr.Zero);
     }
 
     /// <remarks>This method is not testable.</remarks>
@@ -175,6 +179,6 @@ public class GbxThumbnailProvider : IThumbnailProvider, IInitializeWithStream
         regKey.DeleteValue("", false);
         regKey.Close();
 
-        ShellInterop.SHChangeNotify(0x08000000, 0, nint.Zero, nint.Zero);
+        ShellInterop.SHChangeNotify(0x08000000, 0, IntPtr.Zero, IntPtr.Zero);
     }
 }
