@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net7.0-windows</TargetFramework>
+		<TargetFramework>net48</TargetFramework>
 		<RuntimeIdentifiers>win-x64;win-x86</RuntimeIdentifiers>
-		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<EnableComHosting>true</EnableComHosting>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<LangVersion>11</LangVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -16,7 +16,7 @@
 	<ItemGroup>
 		<PackageReference Include="GBX.NET" Version="1.2.1" />
 		<PackageReference Include="GBX.NET.Imaging" Version="1.1.2" />
-		<PackageReference Include="SixLabors.ImageSharp" Version="3.0.1" />
+		<PackageReference Include="SixLabors.ImageSharp" Version="2.1.4" />
 		<PackageReference Include="System.Drawing.Common" Version="7.0.0" />
 	</ItemGroup>
 

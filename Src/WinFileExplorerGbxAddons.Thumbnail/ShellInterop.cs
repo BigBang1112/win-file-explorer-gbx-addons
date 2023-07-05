@@ -8,6 +8,6 @@ public sealed partial class ShellInterop
     {
     }
 
-    [LibraryImport("shell32.dll")]
-    internal static partial void SHChangeNotify(int eventID, uint flags, nint item1, nint item2);
+    [DllImport("shell32.dll")]
+    internal static extern void SHChangeNotify(int eventID, uint flags, nint item1, nint item2);
 }
