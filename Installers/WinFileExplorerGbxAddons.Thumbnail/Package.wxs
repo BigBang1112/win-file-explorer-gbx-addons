@@ -1,5 +1,5 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
-	<Package Name="Universe Gbx Addons for Windows File Explorer (Thumbnail)" Manufacturer="BigBang1112" Version="1.0.0.0" ProductCode="20ad2fbf-29f9-4d77-9d3d-8599b5cff0dc" UpgradeCode="91285ed0-31d5-46b0-b668-9a948669c8ae">
+	<Package Name="Universe Gbx Addons for Windows File Explorer (Thumbnail)" Manufacturer="BigBang1112" Version="1.0.1.0" ProductCode="20ad2fbf-29f9-4d77-9d3d-8599b5cff0dc" UpgradeCode="91285ed0-31d5-46b0-b668-9a948669c8ae">
 		<MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
 		<MediaTemplate EmbedCab="yes" />
 

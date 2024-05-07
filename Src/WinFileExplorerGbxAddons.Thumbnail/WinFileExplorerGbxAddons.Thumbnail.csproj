@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
+		<Version>1.0.1</Version>
 		<TargetFramework>net8.0-windows</TargetFramework>
 		<RuntimeIdentifiers>win-x64;win-x86</RuntimeIdentifiers>
 		<ImplicitUsings>enable</ImplicitUsings>
