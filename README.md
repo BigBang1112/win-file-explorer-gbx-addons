@@ -38,7 +38,7 @@ Shows a small Gbx icon on top of the file thumbnail, making it easier to disting
 
 ## Installation
 
-**.NET 7 Runtime is required for these addons to work,** see below for the easiest ways to install it.
+**.NET 8 Runtime is required for these addons to work,** see below for the easiest ways to install it.
 
 ### Recommended (via WinGet)
 
@@ -49,7 +49,7 @@ Shows a small Gbx icon on top of the file thumbnail, making it easier to disting
 3. Execute these commands below (you can all at once):
 
 ```
-winget install Microsoft.DotNet.Runtime.7
+winget install Microsoft.DotNet.Runtime.8
 winget source add --name BigBang1112 https://winget.bigbang1112.cz -t Microsoft.Rest
 winget install BigBang1112.WinFileExplorerGbxAddons.Thumbnail --force
 winget install BigBang1112.WinFileExplorerGbxAddons.IconOverlay --force
@@ -67,7 +67,7 @@ Each `WinFileExplorerGbxAddons` package is independent, you can only install tho
 
 ### Alternative (manually via .msi file download)
 
-1. Install [.NET 7 Runtime (desktop apps)](https://dotnet.microsoft.com/en-us/download/dotnet/7.0/runtime).
+1. Install [.NET 8 Runtime (desktop apps)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0/runtime).
 2. Download the MSI asset from [the latest release](https://github.com/BigBang1112/win-file-explorer-gbx-addons/releases) of the addons you want (according to your OS).
 3. Run the MSI and accept elevated (admin) privileges.
 4. Done.
@@ -76,7 +76,7 @@ The changes should appear immediately. In rare cases, you need to log in/out fro
 
 ## Build
 
-You need .NET 7 SDK and Wix Toolset to build the solution fully.
+You need .NET 8 SDK and Wix Toolset to build the solution fully.
 
 In Visual Studio, you can simply install HeatWave extension, which will automatically prepare Wix for you.
 
