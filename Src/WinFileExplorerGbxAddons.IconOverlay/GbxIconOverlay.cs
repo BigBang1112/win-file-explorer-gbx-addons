@@ -13,7 +13,7 @@ public partial class GbxIconOverlay : IShellIconOverlayIdentifier
         {
             unchecked
             {
-                return File.Exists(path) && Path.GetExtension(path).ToLowerInvariant() == ".gbx" ? (int)HRESULT.S_OK : (int)HRESULT.S_FALSE;
+                return File.Exists(path) && Path.GetExtension(path).Equals(".gbx", StringComparison.InvariantCultureIgnoreCase) ? (int)HRESULT.S_OK : (int)HRESULT.S_FALSE;
             }
         }
         catch

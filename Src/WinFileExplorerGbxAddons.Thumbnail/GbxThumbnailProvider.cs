@@ -1,8 +1,11 @@
 ﻿using GBX.NET;
 using GBX.NET.Engines.Game;
 using GBX.NET.Engines.GameData;
+using GBX.NET.Engines.MwFoundations;
 using GBX.NET.Imaging;
 using Microsoft.Win32;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Processing;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
@@ -57,7 +60,7 @@ public class GbxThumbnailProvider : IThumbnailProvider, IInitializeWithStream
     {
         try
         {
-            var node = GameBox.ParseNodeHeader(stream);
+            var node = Gbx.ParseHeaderNode(stream);
 
             if (node is null)
             {
@@ -72,7 +75,7 @@ public class GbxThumbnailProvider : IThumbnailProvider, IInitializeWithStream
         }
     }
 
-    internal static Bitmap? GetBitmap(Node node, int size) => node switch
+    internal static Bitmap? GetBitmap(CMwNod node, int size) => node switch
     {
         CGameCtnChallenge map => GetThumbnailBitmap(map, size),
         CGameCtnCollector collector => GetIconBitmap(collector, size),
