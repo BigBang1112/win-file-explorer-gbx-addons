@@ -63,16 +63,14 @@ public class GbxThumbnailProvider : IThumbnailProvider, IInitializeWithStream
         {
             var gbx = Gbx.ParseHeader(stream);
 
-            if (gbx.Node is null)
-            {
-                // Try to use GBX.NET 2 feature to load data from unknown GBX files
-                return (gbx.Header as GbxHeaderUnknown)?
-                    .UserData
-                    .FirstOrDefault(x => x is CGameCtnCollector.HeaderChunk2E001004)?
-                    .Node is CGameCtnCollector node ? GetBitmap(node, size) : null;
-            }
+            // Try to use GBX.NET 2 feature to load data from unknown GBX files
+            var node = gbx.Node ?? (gbx.Header as GbxHeaderUnknown)?
+                .UserData
+                .OfType<CGameCtnCollector.HeaderChunk2E001004>()
+                .FirstOrDefault()?
+                .Node;
 
-            return GetBitmap(gbx.Node, size);
+            return GetBitmap(node, size);
         }
         catch
         {
@@ -80,7 +78,7 @@ public class GbxThumbnailProvider : IThumbnailProvider, IInitializeWithStream
         }
     }
 
-    internal static Bitmap? GetBitmap(CMwNod node, int size) => node switch
+    internal static Bitmap? GetBitmap(CMwNod? node, int size) => node switch
     {
         CGameCtnChallenge map => GetThumbnailBitmap(map, size),
         CGameCtnCollector collector => GetIconBitmap(collector, size),
