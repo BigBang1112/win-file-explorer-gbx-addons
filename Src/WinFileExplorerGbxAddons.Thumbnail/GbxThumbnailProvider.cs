@@ -1,4 +1,5 @@
 ﻿using GBX.NET;
+using GBX.NET.Components;
 using GBX.NET.Engines.Game;
 using GBX.NET.Engines.GameData;
 using GBX.NET.Engines.MwFoundations;
@@ -60,14 +61,18 @@ public class GbxThumbnailProvider : IThumbnailProvider, IInitializeWithStream
     {
         try
         {
-            var node = Gbx.ParseHeaderNode(stream);
+            var gbx = Gbx.ParseHeader(stream);
 
-            if (node is null)
+            if (gbx.Node is null)
             {
-                return null;
+                // Try to use GBX.NET 2 feature to load data from unknown GBX files
+                return (gbx.Header as GbxHeaderUnknown)?
+                    .UserData
+                    .FirstOrDefault(x => x is CGameCtnCollector.HeaderChunk2E001004)?
+                    .Node is CGameCtnCollector node ? GetBitmap(node, size) : null;
             }
 
-            return GetBitmap(node, size);
+            return GetBitmap(gbx.Node, size);
         }
         catch
         {
