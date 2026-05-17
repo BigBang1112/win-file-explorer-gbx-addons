@@ -7,9 +7,13 @@ Installers:
    InstallerUrl: https://github.com/BigBang1112/win-file-explorer-gbx-addons/releases/download/v1.0.0/WinFileExplorerGbxAddons.IconOverlay.x64.msi
    InstallerSha256: 57ee33cb16c98d05d5206d607b693c30e5e999d3884077acea6d45b4666e244d
    ProductCode: '{05E427D4-603C-4F3C-905A-D648DF85E2DD}'
+   AppsAndFeaturesEntries:
+   - UpgradeCode: '{4EF3B4A5-F34D-4F96-8B46-EBB357BE7C6B}'
  - Architecture: x86
    InstallerUrl: https://github.com/BigBang1112/win-file-explorer-gbx-addons/releases/download/v1.0.0/WinFileExplorerGbxAddons.IconOverlay.x86.msi
    InstallerSha256: e441f8cc8621042c1e095ebfd059035dcd27016eefc160e4a3021b860b64a2f7
    ProductCode: '{05E427D4-603C-4F3C-905A-D648DF85E2DD}'
+   AppsAndFeaturesEntries:
+   - UpgradeCode: '{4EF3B4A5-F34D-4F96-8B46-EBB357BE7C6B}'
 ManifestType: installer
 ManifestVersion: 1.1.0
